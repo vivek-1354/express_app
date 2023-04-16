@@ -43,3 +43,10 @@ main {
 .main-header__item a.active {
     color: #3e00a1;
 }
+
+.card{
+    border: 3px solid cyan;
+    width:15vw;
+    align-items: center;
+    align-content: center;
+}
