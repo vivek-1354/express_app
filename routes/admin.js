@@ -23,7 +23,7 @@ router.post('/add-product', (req, res, next) => {
   // console.log(product)
   // if(res.body){
   //    console.log(req.body)};
-  res.redirect('/admin/add-product');
+  res.redirect('/');
 });
 
 exports.router = router;
