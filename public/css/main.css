@@ -35,7 +35,7 @@ main {
 
 .main-header__item a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .main-header__item a:hover,
