@@ -1,9 +1,9 @@
-const express = require('express');   
-const path = require('path');
+   const path = require('path');
+
+const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-
 app.set('view engine', 'ejs')
 app.set('views', 'views')
 const port = 3000;
@@ -16,8 +16,6 @@ const aboutRoutes = require('./routes/about');
 const pageNotFound = require('./controllers/PageNotFound');
 
 app.use(bodyParser.urlencoded({extended: false}));
-
-// This line of code serve a static folder "public" that is available for entire application
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/admin', adminRoutes);
