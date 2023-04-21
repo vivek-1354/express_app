@@ -1,9 +1,12 @@
-const express = require("express");
+const path = require("path");
 
-const aboutUsController = require('../controllers/about')
+const express = require("express");
 
 const router = express.Router();
 
-router.get("/aboutus",aboutUsController.aboutUs);
+router.get("/", (req, res, next) => {
+  // this is about.ejs file that we rendering
+  res.render("about", {pageTitle: "aboutUs", path: "/aboutus" });
+});
 
 module.exports = router;
